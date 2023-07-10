@@ -1,18 +1,16 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jan 18 13:27:50 2023
-
-@author: 서다현
 """
 
 # 1. 데이터 전처리
 import pandas as pd
 
 # (1) 데이터 로드
-time = pd.read_csv("C:\자료실\서다현\파이썬\데이터셋\신한카드\내국인(블록) 일자별시간대별.csv", encoding = "cp949")
-age = pd.read_csv("C:\자료실\서다현\파이썬\데이터셋\신한카드\내국인(집계구) 성별연령대별.csv", encoding = "cp949")
-place = pd.read_csv("C:\자료실\서다현\파이썬\데이터셋\신한카드\내국인(집계구) 유입지별.csv", encoding = "cp949")
-code = pd.read_csv("C:\자료실\서다현\파이썬\데이터셋\신한카드\신한카드 내국인 63업종 코드.csv", encoding = "cp949")
+time = pd.read_csv("C:\내국인(블록) 일자별시간대별.csv", encoding = "cp949")
+age = pd.read_csv("C:\내국인(집계구) 성별연령대별.csv", encoding = "cp949")
+place = pd.read_csv("C:\내국인(집계구) 유입지별.csv", encoding = "cp949")
+code = pd.read_csv("C:\신한카드 내국인 63업종 코드.csv", encoding = "cp949")
 
 code["내국인업종코드(SB_UPJONG_CD)"] = code["내국인업종코드(SB_UPJONG_CD)"].str.upper()
 

@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Jan 10 23:45:12 2023
-
-@author: 서다현
 """
 
 # 1. 데이터 전처리
@@ -10,7 +8,7 @@ import pandas as pd
 import numpy as np
 
 # (1) 데이터 로드
-df = pd.read_csv("C:\자료실\서다현\파이썬\데이터셋\서울시 지하철 30분단위 출발-도착 데이터.csv", encoding='cp949')
+df = pd.read_csv("C:\서울시 지하철 30분단위 출발-도착 데이터.csv", encoding='cp949')
 
 # (2) 년도별 승하차 이용객이 가장 많은 역
 crowd = df.sort_values("인원합계(PASSN_CNT)", ascending = False).drop_duplicates("년(YEAR)").sort_values("년(YEAR)")

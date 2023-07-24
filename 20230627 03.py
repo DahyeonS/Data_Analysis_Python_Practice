@@ -34,7 +34,7 @@ x_test_id = x_test.pop("StudentID")
 
 # (2) EDA
 X.info()
-X.describe().iloc[2,:] # , absences, G1, G2의 표준편차가 1에서 멂
+X.describe().iloc[2,:] # absences, G1, G2의 표준편차가 1에서 멂
 
 # (3) 변수 선택
 X_corr = X.corr().unstack().reset_index().dropna()

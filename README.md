@@ -15,7 +15,7 @@
 
 * 20230627 03.py
   
-* titanic.py
+* titanic.py *([자바/파이썬 강의 응용](https://github.com/DahyeonS/Java_Python_Lecture/blob/main/20240105/ml/titanic.py))*
 
 
 ## 데이터 출처
@@ -27,3 +27,7 @@ https://bigdata.seoul.go.kr/data/selectSampleData.do?r_id=P213&sample_data_seq=7
 * 서울시 업종별 내외국인 신한카드 매출데이터
 
 https://bigdata.seoul.go.kr/data/selectSampleData.do?r_id=P213&sample_data_seq=51&tab_type=&sch_cate=90&file_id=&sch_text=&sch_order=U&currentPage=1
+
+* 타이타닉 데이터
+
+https://www.kaggle.com/competitions/titanic

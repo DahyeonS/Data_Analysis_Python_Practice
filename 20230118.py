@@ -153,6 +153,7 @@ scale = StandardScaler()
 
 target = ["카드이용건수(USECT_CORR)"]
 X_train[target] = scale.fit_transform(X_train[target])
+X_test[target] = scale.transform(X_test[target])
 
 # (4) 테스트/검증용 데이터 분리
 X_tr, X_val, y_tr, y_val = train_test_split(X_train, y_train, test_size = 0.2, random_state = 1234)

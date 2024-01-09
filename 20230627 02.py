@@ -96,6 +96,7 @@ x_test["company_type"] = label.fit_transform(x_test["company_type"])
 # (5) 정규화
 scale = MinMaxScaler()
 X[["training_hours"]] = scale.fit_transform(X[["training_hours"]])
+x_test[["training_hours"]] = scale.transform(x_test[["training_hours"]])
 
 # 4. 데이터셋 분리
 X_tr, X_val, y_tr, y_val = train_test_split(X, y, test_size = 0.3, random_state = 222)

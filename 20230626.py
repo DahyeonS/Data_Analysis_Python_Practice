@@ -43,6 +43,7 @@ x_test["치석"] = label.fit_transform(x_test["치석"])
 scale = MinMaxScaler()
 target = ["체중(5Kg단위)", "수축기혈압", "이완기혈압", "식전혈당(공복혈당)", "총콜레스테롤", "트리글리세라이드", "HDL콜레스테롤", "LDL콜레스테롤", "(혈청지오티)AST"]
 X[target] = scale.fit_transform(X[target])
+x_test[target] = scale.transform(x_test[target])
 
 # 데이터셋 분리
 X_tr, X_val, y_tr, y_val = train_test_split(X, y, test_size = 0.25, random_state = 123)

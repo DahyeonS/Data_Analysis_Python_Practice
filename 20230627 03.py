@@ -23,7 +23,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 # 2. 데이터 로드
 x_train = pd.read_csv("https://raw.githubusercontent.com/Datamanim/datarepo/main/studentscore/X_train.csv")
 y_train = pd.read_csv("https://raw.githubusercontent.com/Datamanim/datarepo/main/studentscore/y_train.csv")
-x_test= pd.read_csv("https://raw.githubusercontent.com/Datamanim/datarepo/main/studentscore/X_test.csv")
+x_test = pd.read_csv("https://raw.githubusercontent.com/Datamanim/datarepo/main/studentscore/X_test.csv")
 
 # 3. 데이터 전처리
 # (1) 사용 데이터 선택
@@ -57,6 +57,7 @@ scale = MinMaxScaler()
 
 target = ["absences", "G1"]
 X[target] = scale.fit_transform(X[target])
+x_test[target] = scale.transform(x_test[target])
 
 # (5) 범주형 변수 변환
 X = pd.get_dummies(X)

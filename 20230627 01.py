@@ -44,6 +44,7 @@ scale = MinMaxScaler()
 
 target = ["CreditScore", "Balance", "EstimatedSalary"]
 X[target] = scale.fit_transform(X[target])
+x_test[target] = scale.transform(x_test[target])
 
 # 데이터셋 분리
 X_tr, X_val, y_tr, y_val = train_test_split(X, y, test_size = 0.3, random_state = 111)
